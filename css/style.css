@@ -7,8 +7,8 @@ font-size:24px;
 
 background: radial-gradient(
 ellipse at bottom,
-#020111 0%,
-#000000 100%
+#050a14 0%,
+#1e3a5f 100%
 );
 
 min-height:100vh;
@@ -122,9 +122,11 @@ align-items:center;
 
 .about-logo img{
 
-width:200px;
-
-filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  /* ロゴの背後にぼんやりとした光を置く */
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
 
 }
 
@@ -132,6 +134,13 @@ filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
 .about-text{
 
 flex:1;
+
+}
+
+.ending{
+
+font-size:clamp(40px,8vw,72px);
+letter-spacing:4px;
 
 }
 
@@ -151,6 +160,7 @@ to{opacity:1}
 .about{
 
 flex-direction:column;
+text-align:left;
 
 }
 
